@@ -1,0 +1,8 @@
+25/08/2023
+
+-Se empezo la creacion de mi Portfolio
+-Se hace el diseño de carpetas para poder gestionar los archivos de mi pagina, hice una carpeta de assets,dentro de esta se encuentra
+la carpeta de css,js, y vendor, en esta ultima se almacenan todos los recursos externos que agarro de internet
+-Hice con javascript, una funcion que pone el año actual en el apartado de copyright, para que este al dia
+-Hice multiples funciones como un widget que te envia al inicio de la pagina, asi como un "desliza para ver mas" y que el navbar aparezca
+y desaparezca en una determinada medida de la pantalla

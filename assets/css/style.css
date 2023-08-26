@@ -1,0 +1,133 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1d1a2f;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #8bd450; /* Agregamos el borde blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* END SCROLLTOPWIDGET */
+
+.scroll-down-widget {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.scroll-down-widget p {
+  margin: 0px 0px 15px 0px;
+  font-size: 15px;
+  color: white;
+}
+.scroll-down-widget i {
+  font-size: 24px;
+  color: #8bd450;
+}
+
+/* END SCROLLDOWN */
+
+main {
+  background-color: #1d1a2f;
+  /* color: #1d1a2f; */
+}
+main h1 {
+  color: #8bd450;
+}
+main p {
+  color: white;
+}
+
+.navbar {
+  background-color: #1d1a2f !important;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 1000; /* Un valor alto para asegurarse de que esté encima de todo */
+  position: fixed;
+  width: 100%; /* Opcional: para asegurarse de que el ancho sea del 100% */
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(139, 212, 80, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(139, 212, 80);
+}
+
+#home-image {
+  opacity: 0.3;
+}
+.nav-link {
+  color: white;
+  margin-right: 20px;
+}
+
+.social {
+  color: #b5afafab;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #8bd450;
+}
+.active {
+  color: #8bd450 !important;
+  border-bottom: 3px solid #8bd450;
+}
+
+.social:hover {
+  color: white;
+}
+
+/* Estilos para dispositivos pequeños como teléfonos */
+@media (max-width: 576px) {
+  #home-image {
+    opacity: 0.3;
+    height: 600px;
+  }
+}
+
+/* Estilos para dispositivos medianos como tabletas en orientación vertical */
+@media (min-width: 577px) and (max-width: 768px) {
+  #home-image {
+    opacity: 0.3;
+    /* Otros estilos específicos para esta resolución si es necesario */
+  }
+}
+
+/* Estilos para dispositivos medianos a grandes como tabletas en orientación horizontal */
+@media (min-width: 769px) and (max-width: 992px) {
+  #home-image {
+    opacity: 0.3;
+  }
+}
+
+/* Estilos para dispositivos grandes como computadoras de escritorio */
+@media (min-width: 993px) {
+  #home-image {
+    opacity: 0.3;
+  }
+}

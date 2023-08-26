@@ -5,12 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/vendor/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio | Jostin Agüero Castro</title>
 </head>
+<style>
+
+</style>
+
 <body>
+    <!-- Start navbar -->
+    <nav id="myNavbar" class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top">
+        <div class="container-fluid mx-3">
+
+            <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-sm fa-solid fa-home"></i>
+                            Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
+                        class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+                        <i class="fa-xl fa-brands fa-linkedin social"></i>
+                    </a>
+                    <a href="https://github.com/alex182123?tab=repositories" target="_blank" class="px-2 text-muted"
+                        data-toggle="tooltip" data-placement="bottom" title="GitHub">
+                        <i class="fa-xl fa-brands fa-github social"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+
+    <!-- Start main -->
     <main>
-        <h1>Github Pages</h1>
+        <img id="home-image" src="./assets/img/home-image-2.jpg" class="img-fluid" alt="">
+        <div class="container">
+            <section>
+
+            </section>
+            <section>
+                <h1>titulo</h1>
+                <p>sjndjasbd</p>
+            </section>
+        </div>
     </main>
+    <!-- End main -->
+
+
+    <!-- Start Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p id="copyright" class="col-md-4 mb-0 text-muted"></p>
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
+                        class="nav-link px-1 text-muted" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+                        <i class="fa-xl fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/alex182123?tab=repositories" class="nav-link px-1 text-muted"
+                        data-toggle="tooltip" data-placement="bottom" title="GitHub">
+                        <i class="fa-xl fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!-- End footer -->
+    <div id="scrollToTop" class="scroll-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <div id="scrollDownWidget" class="scroll-down-widget">
+        <p>Desliza para ver más</p>
+        <i class="fas fa-bounce fa-chevron-down"></i>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- recordar descargar el recurso que esta arriba -->
+    <script src="./assets/vendor/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- End scripts -->
+
+    <!-- End body -->
 </body>
 
 </html>
