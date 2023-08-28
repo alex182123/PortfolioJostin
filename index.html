@@ -15,7 +15,7 @@
 
 <body>
     <!-- Start navbar -->
-    <nav id="myNavbar" class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top">
+    <nav id="myNavbar" class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top border-bottom">
         <div class="container-fluid mx-3">
 
             <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
@@ -26,17 +26,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-sm fa-solid fa-home"></i>
+                        <a class="nav-link active" aria-current="page" href="#Home"><i
+                                class="fa-sm fa-solid fa-home"></i>
                             Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
+                        <a class="nav-link" href="#About">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#Projects">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#Contact">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -57,14 +58,69 @@
 
     <!-- Start main -->
     <main>
-        <img id="home-image" src="./assets/img/home-image-2.jpg" class="img-fluid" alt="">
-        <div class="container">
-            <section>
 
+        <!-- iMAGE CONTAINER -->
+        <div class="home-image-container" id="Home">
+            <img id="home-image" src="./assets/img/home-image-2.jpg" class="img-fluid" loading="lazy">
+            <div class="image-text">
+                <h1 id="home-title">Hola soy Alex182123</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem iste fugiat expedita sunt
+                    blanditiis nulla cum magni deserunt voluptatibus at, voluptatum doloribus tenetur itaque tempore
+                    molestiae cumque consequuntur accusamus!</p>
+            </div>
+        </div>
+
+        <!-- END IMAGE CONTAINER -->
+        <div class="container-fluid px-0">
+
+            <section id="About" class="text-center my-5 py-5 px-3 px-lg-5 ">
+                <h1 id="about-title" class="pt-5">Acerca de</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores
+                    hic,
+                    eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
+                    dolorem nulla quis?</p>
             </section>
-            <section>
-                <h1>titulo</h1>
-                <p>sjndjasbd</p>
+
+
+            <section id="Projects" class="text-center my-5 py-5 px-3 px-lg-5">
+                <h1 id="projects-title" class="pt-5">Proyectos</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores hic,
+                    eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
+                    dolorem nulla quis?</p>
+                <a href="https://github.com/alex182123?tab=repositories" class="btn btn-primary btn-md">Ver
+                    Proyectos</a>
+            </section>
+
+            <section id="Contact" class="text-center my-5 py-5 pb-5 px-3 px-lg-5">
+                <h1 id="contact-title" class="">Contacto</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores hic,
+                    eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
+                    dolorem nulla quis?</p>
+                <form action="" method="post" id="contact-form">
+                    <h4>Formulario de contacto</h4>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="Name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="Name" placeholder="Ingresa tu nombre...">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="Emailadress" class="form-label">Correo Electronico</label>
+                                <input type="email" class="form-control" id="Emailadress"
+                                    placeholder="Ingresa tu correo...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="Message" rows="3"
+                            placeholder="Ingresa un mensaje..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Enviar <i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </form>
             </section>
         </div>
     </main>
@@ -72,9 +128,9 @@
 
 
     <!-- Start Footer -->
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p id="copyright" class="col-md-4 mb-0 text-muted"></p>
+    <div class="container" id="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 border-top">
+            <p id="copyright" class="col-md-4 mb-0"></p>
             <a href="/"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
