@@ -65,9 +65,14 @@
 #Projects {
   background-color: #27233e;
 }
-#footer,
+#footer {
+  color: white !important;
+}
 #footer a {
   color: white !important;
+}
+#footer a:hover {
+  color: #b5afafab !important;
 }
 #home-image {
   opacity: 0.3;
@@ -77,7 +82,7 @@
   text-align: start;
   border: 1px white solid;
   border-radius: 10px;
-  padding: 25px;
+  padding: 35px;
   margin: 40px 0px;
 }
 
@@ -117,6 +122,9 @@ section h1 {
 
 .navbar {
   background-color: #1d1a2f !important;
+  z-index: 1000; /* Un valor alto para asegurarse de que esté encima de todo */
+  position: fixed;
+  width: 100%; /* Opcional: para asegurarse de que el ancho sea del 100% */
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(139, 212, 80, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -162,15 +170,20 @@ section h1 {
 @media (max-width: 576px) {
   #home-image {
     opacity: 0.3;
+    height: 700px;
   }
   .home-image-container {
-    height: 560px;
+    height: 700px;
   }
   .image-text p {
     font-size: 15px;
   }
   .image-text h1 {
     margin: 25px 0px;
+  }
+  #footer,
+  #footer a {
+    font-size: 15px;
   }
 }
 

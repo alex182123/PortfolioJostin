@@ -17,12 +17,21 @@
     <!-- Start navbar -->
     <nav id="myNavbar" class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top border-bottom">
         <div class="container-fluid mx-3">
-
-            <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
+            <div class="ms-auto d-lg-none d-md-block d-sm-block">
+                <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
+                    class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+                    <i class="fa-xl fa-brands fa-linkedin social"></i>
+                </a>
+                <a href="https://github.com/alex182123?tab=repositories" target="_blank" class="px-2 text-muted"
+                    data-toggle="tooltip" data-placement="bottom" title="GitHub">
+                    <i class="fa-xl fa-brands fa-github social"></i>
+                </a>
+            </div>
+            <!-- <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -31,7 +40,7 @@
                             Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About">Acerca de</a>
+                        <a class="nav-link" href="#About">Acerca de mi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Projects">Proyectos</a>
@@ -63,10 +72,14 @@
         <div class="home-image-container" id="Home">
             <img id="home-image" src="./assets/img/home-image-2.jpg" class="img-fluid" loading="lazy">
             <div class="image-text">
-                <h1 id="home-title">Hola soy Alex182123</h1>
+                <!-- <h1 id="home-title">Hola soy Alex182123</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem iste fugiat expedita sunt
                     blanditiis nulla cum magni deserunt voluptatibus at, voluptatum doloribus tenetur itaque tempore
-                    molestiae cumque consequuntur accusamus!</p>
+                    molestiae cumque consequuntur accusamus!</p> -->
+                <div class="text-center text-white sticky-top">
+                    <h1>Still in works | En proceso de desarrollo</h1>
+                    <p>La pagina se encuentra aun en desarrollo</p>
+                </div>
             </div>
         </div>
 
@@ -74,7 +87,7 @@
         <div class="container-fluid px-0">
 
             <section id="About" class="text-center my-5 py-5 px-3 px-lg-5 ">
-                <h1 id="about-title" class="pt-5">Acerca de</h1>
+                <h1 id="about-title">Acerca de mi</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores
                     hic,
                     eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
@@ -83,40 +96,41 @@
 
 
             <section id="Projects" class="text-center my-5 py-5 px-3 px-lg-5">
-                <h1 id="projects-title" class="pt-5">Proyectos</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores hic,
-                    eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
-                    dolorem nulla quis?</p>
+                <h1 id="projects-title">Proyectos</h1>
+                <p class="px-lg-5 pb-4"> Aquí, te invito a explorar una variedad de creaciones que he desarrollado
+                    utilizando
+                    diferentes tecnologías y herramientas. Cada proyecto representa un desafío único y una oportunidad
+                    para aprender y crecer.
+                </p>
+                <p class="px-lg-5 pb-4">
+                    Cada uno de estos proyectos está diseñado para mostrar mi experiencia y habilidades en diversas
+                    áreas tecnológicas.
+                </p>
                 <a href="https://github.com/alex182123?tab=repositories" class="btn btn-primary btn-md">Ver
                     Proyectos</a>
             </section>
 
-            <section id="Contact" class="text-center my-5 py-5 pb-5 px-3 px-lg-5">
-                <h1 id="contact-title" class="">Contacto</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores hic,
-                    eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
-                    dolorem nulla quis?</p>
+            <section id="Contact" class="text-center px-3 px-lg-5">
+                <h1 id="contact-title">Contacto</h1>
                 <form action="" method="post" id="contact-form">
-                    <h4>Formulario de contacto</h4>
+                    <h4 class="pb-3">Formulario de contacto</h4>
                     <div class="mb-3">
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <label for="Name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="Name" placeholder="Ingresa tu nombre...">
+                                <input type="text" class="form-control" id="Name" required>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <label for="Emailadress" class="form-label">Correo Electronico</label>
-                                <input type="email" class="form-control" id="Emailadress"
-                                    placeholder="Ingresa tu correo...">
+                                <input type="email" class="form-control" id="Emailadress" required>
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="Message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="Message" rows="3"
-                            placeholder="Ingresa un mensaje..."></textarea>
+                        <textarea class="form-control" id="Message" rows="3" required></textarea>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <button type="submit" class="btn btn-primary">Enviar <i
                                 class="fa-solid fa-paper-plane"></i></button>
                     </div>
@@ -129,7 +143,7 @@
 
     <!-- Start Footer -->
     <div class="container" id="footer">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 border-top">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top pt-3">
             <p id="copyright" class="col-md-4 mb-0"></p>
             <a href="/"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -154,13 +168,17 @@
         </footer>
     </div>
     <!-- End footer -->
-    <div id="scrollToTop" class="scroll-to-top">
-        <i class="fa fa-arrow-up"></i>
+    <div class="d-lg-block d-md-none d-none">
+        <div id="scrollToTop" class="scroll-to-top">
+            <i class="fa fa-arrow-up"></i>
+        </div>
     </div>
     <div id="scrollDownWidget" class="scroll-down-widget">
         <p>Desliza para ver más</p>
         <i class="fas fa-bounce fa-chevron-down"></i>
     </div>
+
+
 
 
     <!-- Scripts -->

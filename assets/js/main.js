@@ -106,7 +106,6 @@ function checkScrolling(idArray) {
                 links.forEach(link => {
                     if (link.getAttribute('href') === '#' + idArray[index]) {
                         link.classList.add('active');
-                        console.log(idArray[index]);
                     } else {
                         link.classList.remove('active');
                     }
