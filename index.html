@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./assets/vendor/bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/Pepe_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/Pepe_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/Pepe_favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicons/Pepe_favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicons/Pepe_favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <title>Portfolio | Jostin Agüero Castro</title>
 </head>
 <style>
@@ -20,11 +31,11 @@
             <div class="ms-auto d-lg-none d-md-block d-sm-block">
                 <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
                     class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
-                    <i class="fa-xl fa-brands fa-linkedin social"></i>
+                    <img src="./assets/img/united-kingdom.png" class="img-fluid" height="23.25px" width="24px">
                 </a>
-                <a href="https://github.com/alex182123?tab=repositories" target="_blank" class="px-2 text-muted"
-                    data-toggle="tooltip" data-placement="bottom" title="GitHub">
-                    <i class="fa-xl fa-brands fa-github social"></i>
+                <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
+                    class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+                    <img src="./assets/img/spain.png" class="img-fluid" height="23.25px" width="24px">
                 </a>
             </div>
             <!-- <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
@@ -37,26 +48,26 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#Home"><i
                                 class="fa-sm fa-solid fa-home"></i>
-                            Inicio</a>
+                            Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About">Acerca de mi</a>
+                        <a class="nav-link" href="#About"><i class="fas fa-user"></i> About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Proyectos</a>
+                        <a class="nav-link" href="#Projects"><i class="fas fa-folder-open"></i> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contacto</a>
+                        <a class="nav-link" href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
-                        class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
-                        <i class="fa-xl fa-brands fa-linkedin social"></i>
+                        class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="Translate">
+                        <img src="./assets/img/united-kingdom.png" class="img-fluid" height="23.25px" width="24px">
                     </a>
-                    <a href="https://github.com/alex182123?tab=repositories" target="_blank" class="px-2 text-muted"
-                        data-toggle="tooltip" data-placement="bottom" title="GitHub">
-                        <i class="fa-xl fa-brands fa-github social"></i>
+                    <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/" target="_blank"
+                        class="px-2 text-muted" data-toggle="tooltip" data-placement="bottom" title="Traducir">
+                        <img src="./assets/img/spain.png" class="img-fluid" height="23.25px" width="24px">
                     </a>
                 </form>
             </div>
@@ -72,14 +83,23 @@
         <div class="home-image-container" id="Home">
             <img id="home-image" src="./assets/img/home-image-2.jpg" class="img-fluid" loading="lazy">
             <div class="image-text">
-                <!-- <h1 id="home-title">Hola soy Alex182123</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem iste fugiat expedita sunt
-                    blanditiis nulla cum magni deserunt voluptatibus at, voluptatum doloribus tenetur itaque tempore
-                    molestiae cumque consequuntur accusamus!</p> -->
-                <div class="text-center text-white sticky-top">
+                <h1 id="home-title">Hello, I'm Jostin 👋</h1>
+                <p>Welcome to my portfolio of projects. This page aims to introduce myself, showcase the projects I've
+                    worked on, and provide a way to get in touch.</p>
+                <a href="https://www.linkedin.com/in/jostin-ag%C3%BCero-castro-360012203/"
+                    class="btn btn-custom-1 btn-icon my-lg-0 my-md-0 my-2">
+                    <i class="fa-xl fa-brands fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+                <a href="https://github.com/alex182123?tab=repositories" class="btn btn-custom-1 btn-icon">
+                    <i class="fa-xl fa-brands fa-github"></i>
+                    <span>Github</span>
+                </a>
+
+                <!-- <div class="text-center text-white sticky-top">
                     <h1>Still in works | En proceso de desarrollo</h1>
                     <p>La pagina se encuentra aun en desarrollo</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -87,7 +107,7 @@
         <div class="container-fluid px-0">
 
             <section id="About" class="text-center my-5 py-5 px-3 px-lg-5 ">
-                <h1 id="about-title">Acerca de mi</h1>
+                <h1 id="about-title">About me</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cupiditate saepe maiores
                     hic,
                     eos ab exercitationem maxime quae nulla sit dolorem? Suscipit doloremque odio vitae, odit eum
@@ -96,7 +116,7 @@
 
 
             <section id="Projects" class="text-center my-5 py-5 px-3 px-lg-5">
-                <h1 id="projects-title">Proyectos</h1>
+                <h1 id="projects-title">Projects</h1>
                 <p class="px-lg-5 pb-4"> Aquí, te invito a explorar una variedad de creaciones que he desarrollado
                     utilizando
                     diferentes tecnologías y herramientas. Cada proyecto representa un desafío único y una oportunidad
@@ -106,33 +126,35 @@
                     Cada uno de estos proyectos está diseñado para mostrar mi experiencia y habilidades en diversas
                     áreas tecnológicas.
                 </p>
-                <a href="https://github.com/alex182123?tab=repositories" class="btn btn-primary btn-md">Ver
-                    Proyectos</a>
+                <a href="https://github.com/alex182123?tab=repositories" class="btn btn-custom-1"><i
+                        class="fas fa-folder-open"></i>
+                    <span>Explore projects</span>
+                </a>
             </section>
 
             <section id="Contact" class="text-center px-3 px-lg-5">
-                <h1 id="contact-title">Contacto</h1>
+                <h1 id="contact-title">Contact</h1>
                 <form action="" method="post" id="contact-form">
-                    <h4 class="pb-3">Formulario de contacto</h4>
+                    <h4 class="pb-3">Contact Form</h4>
                     <div class="mb-3">
                         <div class="row">
                             <div class="col-lg-6 col-12">
-                                <label for="Name" class="form-label">Nombre</label>
+                                <label for="Name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="Name" required>
                             </div>
                             <div class="col-lg-6 col-12">
-                                <label for="Emailadress" class="form-label">Correo Electronico</label>
+                                <label for="Emailadress" class="form-label">Email Adress</label>
                                 <input type="email" class="form-control" id="Emailadress" required>
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="Message" class="form-label">Mensaje</label>
+                        <label for="Message" class="form-label">Mesagge</label>
                         <textarea class="form-control" id="Message" rows="3" required></textarea>
                     </div>
                     <div class="mb-1">
-                        <button type="submit" class="btn btn-primary">Enviar <i
-                                class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-custom-1"><i class="fa-solid fa-paper-plane"></i>
+                            Send</button>
                     </div>
                 </form>
             </section>
@@ -143,7 +165,7 @@
 
     <!-- Start Footer -->
     <div class="container" id="footer">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top pt-3">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top my-5 pt-5">
             <p id="copyright" class="col-md-4 mb-0"></p>
             <a href="/"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -174,7 +196,7 @@
         </div>
     </div>
     <div id="scrollDownWidget" class="scroll-down-widget">
-        <p>Desliza para ver más</p>
+        <p class="d-lg-block d-md-block d-none">Scroll down to see more 👇</p>
         <i class="fas fa-bounce fa-chevron-down"></i>
     </div>
 
@@ -186,6 +208,7 @@
     <!-- recordar descargar el recurso que esta arriba -->
     <script src="./assets/vendor/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+
     <script src="./assets/js/main.js"></script>
 
     <!-- End scripts -->

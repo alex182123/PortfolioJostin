@@ -92,7 +92,6 @@ function checkSection(idElement) {
         }
     });
 }
-
 function checkScrolling(idArray) {
 
     const elements = idArray.map(id => document.getElementById(id));
@@ -115,10 +114,6 @@ function checkScrolling(idArray) {
     });
 }
 
-// Ejemplo de uso
-
-// Ejemplo de uso
-
 
 $(document).ready(function () {
     //SCROLLDOWN
@@ -135,19 +130,10 @@ $(document).ready(function () {
     tooltip();
 
     //FADENAVBAR
-    // fadeNavbar();
+    fadeNavbar();
 
     //TYPEWRITTEREFFECT
     typeWritterEfect('home-title');
-
-    //TYPEWRITTEREFFECT
-    typeWritterEfect('about-title');
-
-    //TYPEWRITTEREFFECT
-    typeWritterEfect('projects-title');
-
-    //TYPEWRITTEREFFECT
-    typeWritterEfect('contact-title');
 
     // Manejar clics en enlaces con desplazamiento suave
     $('a[href^="#"]').on('click', function (event) {
@@ -158,5 +144,6 @@ $(document).ready(function () {
             }, 800); // Ajusta la velocidad del desplazamiento si es necesario
         }
     });
-    checkScrolling(['Home', 'Projects', 'About', 'Contact']);
+    checkScrolling(['Home', 'About', 'Projects', 'Contact']);
+
 });
