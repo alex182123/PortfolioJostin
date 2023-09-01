@@ -260,6 +260,19 @@
     <!-- End scripts -->
 
     <!-- End body -->
+    <script>
+        $.ajax({
+            url: 'http://whitecas.infinityfreeapp.com/php_APIREST/post.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                console.log(response);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error:', textStatus, errorThrown);
+            }
+        });
+    </script>
 </body>
 
 </html>
