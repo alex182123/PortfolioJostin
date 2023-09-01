@@ -38,11 +38,6 @@
                     <img src="./assets/img/spain.png" class="img-fluid" height="23.25px" width="24px">
                 </a>
             </div>
-            <!-- <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -94,6 +89,10 @@
                 <a href="https://github.com/alex182123?tab=repositories" class="btn btn-custom-1 btn-icon">
                     <i class="fa-xl fa-brands fa-github"></i>
                     <span>Github</span>
+                </a>
+                <a href="https://github.com/alex182123?tab=repositories" class="btn btn-custom-1 btn-icon">
+                    <i class="fa-xl fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
                 </a>
 
                 <!-- <div class="text-center text-white sticky-top">
@@ -214,6 +213,19 @@
     <!-- End scripts -->
 
     <!-- End body -->
+    <script>
+        $.ajax({
+            url: 'http://whitecas.infinityfreeapp.com/php_APIREST/post.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                console.log(response);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error:', textStatus, errorThrown);
+            }
+        });
+    </script>
 </body>
 
 </html>
