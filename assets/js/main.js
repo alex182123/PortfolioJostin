@@ -1,19 +1,3 @@
-
-// Recordar revisar este codigo para poder utilizar el envio de correos a una api
-
-// Email.send({
-//     Host: "smtp.yourisp.com",
-//     Username: "username",
-//     Password: "password",
-//     To: 'them@website.com',
-//     From: "you@isp.com",
-//     Subject: "This is the subject",
-//     Body: "And this is the body"
-// }).then(
-//     message => alert(message)
-// );
-
-
 function scrollTopWidget() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -72,28 +56,8 @@ function scrollDownSeeMore() {
             $('#scrollDownWidget').css('opacity', '1');
         }
     });
-
-    $('#scrollDownWidget').click(function () {
-        $('html, body').animate({ scrollTop: $(window).height() }, 600);
-    });
-}
-
-function checkSection(idElement) {
-    const element = $('#About');
-    // const element = $(idElement);
-    const windowHeight = $(window).height();
-
-    $(window).scroll(function () {
-        const elementTop = element.offset().top;
-
-        if (elementTop - windowHeight < 0) {
-            // El usuario ha pasado por la sección
-            alert('Usuario ha pasado por la sección ' + idElement);
-        }
-    });
 }
 function checkScrolling(idArray) {
-
     const elements = idArray.map(id => document.getElementById(id));
     const windowHeight = window.innerHeight;
     const links = document.querySelectorAll('a[href^="#"]');
@@ -101,7 +65,12 @@ function checkScrolling(idArray) {
     window.addEventListener('scroll', function () {
         elements.forEach((element, index) => {
             const elementTop = element.getBoundingClientRect().top;
-            if (elementTop - windowHeight < 0) {
+            const elementBottom = element.getBoundingClientRect().bottom;
+
+            // Adjust this value to change when the section is considered seen
+            const offset = 100; // For example, consider the section seen when it's 100px from the viewport
+
+            if (elementTop - windowHeight + offset <= 0 && elementBottom >= offset) {
                 links.forEach(link => {
                     if (link.getAttribute('href') === '#' + idArray[index]) {
                         link.classList.add('active');
@@ -113,6 +82,7 @@ function checkScrolling(idArray) {
         });
     });
 }
+
 
 
 $(document).ready(function () {
@@ -145,5 +115,6 @@ $(document).ready(function () {
         }
     });
     checkScrolling(['Home', 'About', 'Projects', 'Contact']);
+
 
 });
