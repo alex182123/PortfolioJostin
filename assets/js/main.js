@@ -116,5 +116,4 @@ $(document).ready(function () {
     });
     checkScrolling(['Home', 'About', 'Projects', 'Contact']);
 
-
 });

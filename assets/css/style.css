@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -161,7 +164,7 @@ main p {
   color: black;
   background-color: white;
   border: 1px solid white;
-  margin: 10px 0px 0px 8px;
+  margin: 10px 8px 0px 0px;
   padding: 0px 15px;
   font-size: 12px;
   position: relative;
@@ -265,17 +268,30 @@ main p {
     width: 90%;
     padding: 10px;
   }
+  .tag {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    margin: 3px 8px 15px 0px;
+    padding: 0px 15px;
+    font-size: 10px;
+    position: relative;
+    height: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.4s, color 0.4s;
+  }
 }
 
 /* Estilos para dispositivos medianos como tabletas en orientación vertical */
 @media (min-width: 577px) and (max-width: 768px) {
   #home-image {
     opacity: 0.3;
-    height: 700px;
+    height: 525px;
     width: 100%;
   }
   .home-image-container {
-    height: 700px;
+    height: 525px;
     width: 100%;
   }
 }
