@@ -30,29 +30,6 @@ html {
   transition: opacity 0.4s;
 }
 
-/* END SCROLLTOPWIDGET */
-
-.scroll-down-widget {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-.scroll-down-widget p {
-  margin: 0px 0px 15px 0px;
-  font-size: 15px;
-  color: white;
-}
-.scroll-down-widget i {
-  font-size: 24px;
-  color: #8bd450;
-}
-
-/* END SCROLLDOWN */
-
 .image-text {
   position: absolute;
   top: 50%; /* Ajusta según necesites */
@@ -91,7 +68,7 @@ main {
   background-color: #1d1a2f;
   /* color: #1d1a2f; */
 }
-section{
+section:not(#home-section) {
   padding: 20px 0px 0px 0px;
 }
 h1,

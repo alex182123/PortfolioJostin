@@ -48,15 +48,6 @@ function typeWritterEfect(id) {
     }, 100); // Ajusta el valor para cambiar la velocidad del efecto
 }
 
-function scrollDownSeeMore() {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('#scrollDownWidget').css('opacity', '0');
-        } else {
-            $('#scrollDownWidget').css('opacity', '1');
-        }
-    });
-}
 function checkScrolling(idArray) {
     const elements = idArray.map(id => document.getElementById(id));
     const windowHeight = window.innerHeight;
@@ -86,8 +77,6 @@ function checkScrolling(idArray) {
 
 
 $(document).ready(function () {
-    //SCROLLDOWN
-    scrollDownSeeMore();
 
     //SCROLLTOP
     scrollTopWidget();
