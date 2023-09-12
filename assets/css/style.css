@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 .scroll-to-top {
@@ -91,7 +91,9 @@ main {
   background-color: #1d1a2f;
   /* color: #1d1a2f; */
 }
-
+section{
+  padding: 20px 0px 0px 0px;
+}
 h1,
 h2,
 h3,
@@ -231,6 +233,7 @@ main p {
   background-color: transparent !important;
   border: none !important;
 }
+
 /* MEDIA QUERY */
 
 /* Estilos para dispositivos pequeños como teléfonos */
